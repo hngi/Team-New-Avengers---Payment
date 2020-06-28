@@ -84,7 +84,7 @@ ul.navbar-nav:first-of-type > li{
     --animate-duration: 1.8s;
     --ainmate-delay:.5s;
 }
-/* navbar hover effect */
+/* navbar hover effects */
 .txt-links li a:hover{
     color: #000;
  }
