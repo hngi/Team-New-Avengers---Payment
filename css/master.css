@@ -1,1 +1,432 @@
+/* external fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* general styles */
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary:#2DBE60;
+    --secondary:#F1F5F6;
+}
+.txt-primary{
+    color: var(--primary);
+}
+.txt-brand{
+    color: #10110B;
+    font-family: 'Mali', sans-serif;
+    font-weight: bold;
+    font-size: 3.125em;
+    line-height: 65px;
+}
+.txt-links{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 500;
+    font-size: 1.125em;
+    line-height: 24px;
+}
+section:nth-of-type(even){
+    background-color: #f1f5f6;
+}
+section > h3{
+    font-weight: 600;
+    font-size: 2.5em;
+    line-height: 40px;
+    color: #1e1e1e;
+}
+section > p{
+    font-weight: 600;
+    font-size: 1.563em;
+    line-height: 30px;
+    color: #828282;
+}
+/* btn pseudo styles */
+.btn-primary:not(:disabled):not(.disabled):active:active{
+    background-color: #2DBE60;
+    border: none;
+}
+.txt-links.btn-primary:hover{
+    background-color: var(--primary);
+    color: #fff;
+    opacity: .9;
+}
+.btn-primary:focus{
+    background-color: #2DBE60;
+    border: none;
+    box-shadow: none;
+}
+.btn-primary:hover{
+    background-color: #2DBE60;
+    border: none;
+    opacity: .9;
+}
+.hero-buttons .btn-clear:hover{
+   background-color: #82828223;
+}
+/* header styles */
+.btn-primary{
+    display: table;
+    vertical-align: middle;
+    padding: 14px 20px;
+    background-color: var(--primary);
+    outline: none;
+    border: none;
+}
+ul.navbar-nav:first-of-type > li{
+    padding-right: 1em;
+}
+.animate__animated.animate__fadeIn{
+    --animate-duration: 1.8s;
+    --ainmate-delay:.5s;
+}
+/* navbar hover effects */
+.txt-links li a:hover{
+    color: #000;
+ }
+ .txt-links li a:hover:after{
+     opacity: 1;
+     width: 100%;
+ }
+ .txt-links li a:after {
+   transition: all 0.3s ease;
+     opacity: 0;
+     border-top: 3px solid #2DBE60;
+     content: '';
+     display: block;
+     z-index: -1;
+     margin: auto;
+     width: 0px;
+ }
+ .txt-links li a:after {
+     top: 5px;
+ }
+/* hero styles */
+#hero{
+    height: 100vh;
+}
+.hero-img{
+    background-image: url(/imgs/hero-image.svg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.hero-text{
+    width: 60%;
+}
+.hero-text h2{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: bold;
+    font-size: 3.75em;
+    line-height: 73px;
+}
+.hero-text p{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 600;
+    font-size: 1.875em;
+    line-height: 45px;
+    letter-spacing: -0.05em;
+}
+.hero-buttons{
+    width: 80%;
+}
+.hero-buttons .btn{
+    flex-basis: 50%;
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 25px;
+}
+.hero-buttons .btn-clear{
+    display: table;
+    vertical-align: middle;
+    padding: 11px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.animate__animated.animate__fadeInUp{
+    --animate-duration: 1s;
+    --ainmate-delay:.5s;
+}
+/* offer section styles  */
+.offer-item h4, #operations h4{
+    color: #1e1e1e;
+    font-weight: 600;
+    font-size: 1.375em;
+    line-height: 27px;
+}
+.offer-item p{
+    color: #828282;
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 25px;
+}
+/* payments section styles  */
+#payments h4{
+    color: #1e1e1e;
+    font-weight: 600;
+    font-size: 2.063em;
+    line-height: 40px;
+}
+#payments p{
+    color: #828282;
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 30px;
+}
+#payments h5{
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 24px;
+}
+/* reviews section styles  */
+#reviews .card{
+    background-color: #f1f5f6;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+#reviews .card-img-top{
+    width: fit-content;
+}
+#reviews .card-text{
+    color: #323232;
+    font-weight: 500;
+    font-size: 1.438em;
+    line-height: 37px;
+}
+#reviews .card-title{
+    color: #3c3c3c;
+    font-weight: 600;
+    font-size: 1.563em;
+    line-height: 37px;
+}
+#reviews .card-subtitle{
+    color: #828282;
+    font-weight: 500;
+    font-size: 1.438em;
+    line-height: 37px;
+}
+#reviews > a{
+    text-decoration: none;
+    color: #2DBE60;
+}
+.swiper-pagination-bullet{
+    background-color: transparent;
+    border: 2px solid #646464;
+}
+.swiper-pagination-bullet-active{
+    border: 2px solid #2DBE60;
+    background-color: #2DBE60;
+}
+/* connect section  */
+.social-links i{
+    color: #f1f5f6;
+    background-color: #2c2c2c;
+    font-size: 1.5em;
+    padding: .3em .5em;
+    border-radius: 50%;
+    transition: all ease-in 200ms;
+}
+.social-links i:hover{
+    color: #2c2c2c;
+    background-color: #f1f5f6;
+}
+/* footer styles  */
+#footer hr{
+    margin-top: 0;
+    background-color: #828282;
+    width: 100%;
+    opacity: .5;
+}
+.footer-links a, .bottom-footer p{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 24px;
+}
+.footer-links a:hover{
+    opacity: .8;
+}
+.dark a{
+    color: #3c3c3c;
+}
+.light a, .bottom-footer p{
+    color: #828282;
+}
+.footer-mobile .txt-brand{
+    border-right: 1px solid #000;
+}
+/* media queries  */
+@media screen and (max-width:1300px){
+    .txt-brand{
+        font-size: 2.5em;
+    }
+    .text-links{
+        font-size: 1em;
+    }
+    .hero-text{
+        width: 80%;
+    }
+    .people img{
+        width: 80%;
+    }
+    #payments h4{
+        font-size: 1.5em;
+    }
+    #payments p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:1100px){
+    .txt-links{
+        font-size: 1em;
+    }
+    .hero-text{
+        width: 80%;
+    }
+    section > h3{
+        font-size: 2em;
+    }
+    section > p{
+        font-size: 1.25em;
+    }
+    .offer-item h4{
+        font-size: 1.25em;
+    }
+    .offer-item p{
+        font-size: 1em;
+    }
+    .footer-links a{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:992px){
+    .hero-text{
+        width: 100%;
+    }
+    #payments h4{
+        font-size: 2.063em;
+    }
+    #payments p{
+        font-size: 1.25em;
+    }
+    .bottom-footer p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:768px){
+    .hero-text h2{
+        font-size: 3em;
+    }
+    .hero-text p{
+        font-size: 1.25em;
+    }
+    .hero-buttons .btn{
+        font-size: 1em;
+    }
+    #operations img{
+        width: 40%;
+    }
+    #operations h4{
+        font-size: 1em;
+    }
+    .footer-links a, .bottom-footer p{
+        font-size: .9em;
+    }
+}
+@media screen and (max-width:600px){
+    #hero{
+        height: 55vh;
+    }
+    .hero-buttons{
+        width: 50%;
+    }
+    .hero-text h2{
+        font-size: 1.25em;
+        line-height: 24px;
+    }
+    .hero-text p{
+        font-size: 0.75em;
+        line-height: 15px;
+    }
+}
+@media screen and (max-width:470px){
+    .txt-brand{
+        font-size: 1.875em;
+        line-height: 39px;
+    }
+    .txt-links{
+        font-size: .8em;
+    }
+    .nav-item .btn-primary{
+        padding: 10px;
+    }
+    .hero-text{
+        width: 80%;
+    }
+    .hero-buttons .btn{
+        font-size: .4em;
+        padding: 5px;
+    }
+    .hero-buttons img{
+        width: 30%;
+    }
+    section > h3, 
+    #payments h4, 
+    #payments h5{
+        font-size: 0.813em;
+        line-height: 16px;
+    }
+    section > p, 
+    .offer-item p, 
+    #payments p,
+    #operations h4,
+    #reviews .card-text,
+    .footer-links a{
+        font-size: 0.625em;
+        line-height: 12px;
+    }
+    .offer-item svg{
+        width: 40px;
+    }
+    .offer-item h4{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    #operations img{
+        width: 30%;
+    }
+    #reviews .card-title{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    #reviews .card-subtitle{
+        font-size: 10px;
+        line-height: 37px;
+    }
+    #reviews .card-img-top{
+        width: 25%;
+    }
+    #connect p {
+        width: 80%;
+    }
+    #connect img{
+        width: 30%;
+    }
+    .social-links i{
+        font-size: .9em;
+    }
+    .footer-mobile .txt-brand{
+        font-size: 1.875em;
+        line-height: 39px;
+    }
+    .bottom-footer p{
+        font-size: 8px;
+        line-height: 10px;
+    }
+}
