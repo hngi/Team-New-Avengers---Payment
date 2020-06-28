@@ -110,6 +110,7 @@ ul.navbar-nav:first-of-type > li{
     height: 100vh;
 }
 .hero-img{
+    background-color: #000;
     background-image: url(/imgs/hero-image.svg);
     background-position: center;
     background-size: cover;
