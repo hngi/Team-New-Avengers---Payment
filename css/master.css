@@ -237,6 +237,9 @@ ul.navbar-nav:first-of-type > li{
     color: #2c2c2c;
     background-color: #f1f5f6;
 }
+#connect img:hover{
+    opacity: .9;
+}
 /* footer styles  */
 #footer hr{
     margin-top: 0;
