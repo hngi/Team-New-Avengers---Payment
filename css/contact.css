@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+:root {
+    --primary-color: #2DBE60; /* green */
+    --light-grey-color: #E5E5E5;
+    --dark-grey-color: #828282;
+    --black-color: #1e1e1e;
+    --color-white: #ffffff;
+    --shadow: 0 1rem 3rem rgba(0, 0,0, 0.1);
+    --section-gutter: 8%;
+    --secition-item-gutter: 5%;
+}
+
+/* BASICS RESETS */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* => 1rem == 10px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+h2,h3,.black-text {
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grey-color);
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+
+}
+
+/* Utility classes */
+
+.btn-success {
+    background-color: var(--primary-color) !important;
+}
+
+.help-section, .contact-section {
+    margin-bottom: var(--section-gutter);
+}
+
+.section-header  {
+    font-size: 2rem;
+}
+.section-header h2 {
+    font-size: 3rem;
+}
+
+/* ////////////////// HERO SECTION //////////////////////*/
+
+.hero-section {
+    background-image: url('../imgs/bg-header-desktop.jpg');
+    /* background-position: bottom; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.hero-text {
+    padding: 20% 5%;
+    width: 100%;
+}
+
+.bg-header {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.bg-text {
+    font-size: 3rem;
+    margin-top: 3rem;
+    
+}
+
+/* ////////////////// HELP SECTION //////////////////*/
+
+.help-section {
+    padding: var(--secition-item-gutter);
+}
+
+.help__icon {
+    fill: var(--primary-color);
+    margin: 3rem auto;
+    
+}
+
+.help-section, .send-message, .cta-section {
+    background: #F1F5F6;
+}
+
+/* //////// FORM TO SEND MESSAGE SECTION ////*/
+
+.send-message {
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 3rem;
+}
+.form-control {
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: 1px solid var(--dark-grey-color);
+}
+
+.form-control::placeholder {
+    font-weight: 400;
+    color: var(--light-grey-color);
+    font-family: inherit;
+}
+
+.form-button {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 2.5rem;
+    border: none;
+    font-weight: 700;
+    font-family: inherit;
+    padding: 1.5rem 0;
+    border-radius: 1rem;
+    transition: all .5s;
+}
+
+.form-button:active {
+    transform: translateY(5px);
+    transform: scale(1);
+}
+.form-button:hover {
+
+    transform: scale(1.1);
+}
+
+/* /////////////// CTA  SECTION //////////// */
+.cta-section {
+    padding: 10% 0;
+}
+
+/*///////////////// FOOTER SECTION //////////////*/
+
+
+
+@media (max-width: 575px) {
+    
+    body {
+        font-size: 1rem;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .section-header  {
+        font-size: inherit;
+    }
+    .section-header h2 {
+        font-size: 1.2rem;
+    }
+     h3 {
+        font-size: 1.1rem;
+    }
+
+
+    /* HERO SECTION */
+    .hero-text {
+        padding: 20% 0 50%;
+        line-height: 1.5;
+    }
+   
+    .bg-header {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .bg-text {
+        font-size: inherit;
+        margin-top: 1rem;   
+    }
+
+    .contact-details {
+        text-align: center;
+        margin: auto;
+    }
+    
+    
+    .send-message {
+        padding: 5rem;
+        border-radius: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .form-button {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 1.3rem 0;
+    }
+
+}
+
+@media (max-width: 411px) {
+    :root {
+        --section-gutter: 20%;
+    }
+    .hero-section {
+        background-image: url('../imgs/bg-header-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--color-white);
+        font-weight: 700;
+        text-align: center;
+    }
+
+
+}
