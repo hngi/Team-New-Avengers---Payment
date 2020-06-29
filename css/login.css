@@ -16,7 +16,13 @@
 .register-jumbo {
     background: url('/imgs/background/micah-williams-lmFJOx7hPc4-unsplash\ 2.png') ;
     background-size: cover;
+    background-position-x: 40%;
     padding: 5rem .5rem;
+}
+@media screen(min-width:500px){
+    .register-jumbo{
+        background-position:center;
+    }
 }
 .login-intro-text{
     height: 70vh;
