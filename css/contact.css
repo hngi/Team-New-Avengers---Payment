@@ -45,7 +45,7 @@ body {
     background-color: var(--primary-color) !important;
 }
 
-.help-section, .contact-section {
+.help-section, #contact-section {
     margin-bottom: var(--section-gutter);
 }
 
