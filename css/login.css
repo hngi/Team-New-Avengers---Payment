@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #141414;
+}
+
+.login-jumbo {
+    background: url('imgs/background/bkg/micah-williams-lmFJOx7hPc4-unsplash\ 1.svg');
+    /* background-size: cover; */
+    padding: 5rem .5rem;
+}
+.register-jumbo {
+    background: url('imgs/background/micah-williams-lmFJOx7hPc4-unsplash\ 1.svg') ;
+    /* background-size: cover; */
+    padding: 5rem .5rem;
+}
+.login-intro-text{
+    height: 70vh;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; 
+    margin-left: 3rem;
+}
+.login-intro-form{
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; 
+}
+.login-intro-text h3{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    margin-bottom: 1rem;
+    color: white;
+}
+.login-intro-text p{
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: -0.05em;
+}
+.login-form {
+    width: 616px;
+    background: #f1f5f6;
+    border-radius: 10px;
+    padding: 5rem 3rem;
+}
+.login-header {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+}
+.login-check{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+}
+.login-password {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+}
+.text-green {
+    color: #2DBE60;   
+}
+.text-green:hover{
+    color: #2DBE60;    
+}
+.btn-green {
+    background-color: #2DBE60;    
+    width: 312px;
+    border-radius: 5px;
+    height: 70px;
+    border: .1rem solid #2DBE60; 
+}
+
+
+
+
+/* ---------------------Get App---------------------- */
+#get-app {
+    background: #F1F5F6;
+    padding: 3rem 0;
+    font-family: 'Montserrat', sans-serif; 
+}
+#get-app h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #1E1E1E;
+}
+#get-app p {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #828282;
+}
+.login-icon svg{
+    margin-right: 1rem;
+}
+.login-icon{
+    margin-top: 2rem;
+}
+
+
+
+/* Media Queries */
+@media(max-width : 992px){
+    .login-intro-text h3{
+        font-size: 45px;
+        line-height: 61px;
+    }
+    .login-intro-text p{
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .login-form {
+        width: 580px;
+        border-radius: 10px;
+        padding: 5rem 3rem;
+    } 
+    .login-check{
+        font-size: 15px;
+        line-height: 12px;
+    }
+    .login-password {
+        font-size: 15px;
+        line-height: 12px;
+    } 
+}
+@media(max-width : 880px){
+    .login-form {
+        width: 500px;
+        background: #f1f5f6;
+        border-radius: 10px;
+        padding: 4rem 1rem;
+    }    
+}
+@media(max-width : 767px){
+    .login-intro-form {
+        justify-content: center;
+    }
+    .login-intro-text{
+        justify-content: center;
+        height: 30vh;
+        margin-left: 0rem;
+    }
+    .intro-para {
+        text-align: center;
+    }
+
+}
+@media(max-width : 472px){
+    .login-form {
+        width: 323px;
+        padding: 2rem 1rem;
+    }
+    .login-header {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .login-check{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .login-password {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .btn-green {
+        width: 107px;
+        height: 36.75px;
+    }    
+    #get-app p {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    #get-app h3 {
+        font-size: 13px;
+        line-height: 16px;
+    }    
+    .login-intro-text h3{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .login-intro-text p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .app-store svg , .app-store img{
+        width: 108px;
+    }
+    .login-icon svg {
+        width: 11.62px;
+    }
+    .login-icon{
+        margin-top: 0;
+    }
+}
