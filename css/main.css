@@ -1,16 +1,28 @@
 * {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
-:root {
+body {
   font-family: "Poppins", sans-serif;
 }
 .nav-link,
 .navbtn {
   font-size: 0.9em;
 }
-.navbtn {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+.carousel-caption .h1 {
+  margin-top: -500px;
 }
-.first-text-over-image {
-  margin-top: -60%;
+.carousel-caption .h4 {
+  margin-top: -420px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.open {
+  margin-top: -250px;
+}
+.btn-outline-secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.img-fluid {
+  height: 90vh;
 }
