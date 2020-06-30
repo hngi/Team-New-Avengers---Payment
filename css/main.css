@@ -1,0 +1,13 @@
+* {
+  /* border: 1px solid red; */
+}
+:root {
+  font-family: "Poppins", sans-serif;
+}
+.nav-link,
+.navbtn {
+  font-size: 0.9em;
+}
+.navbtn {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
