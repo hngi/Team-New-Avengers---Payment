@@ -299,18 +299,8 @@ font-family: 'Montserrat', sans-serif;
 }
 /* Img content review */
 
-.img-container{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1em;
-  object-fit: cover;
-  width: 70px;
-}
-
 .circle-1{
-  width: 90px;
+  width: 110px;
   position: relative;
   display: flex;
   align-items: center;
@@ -327,9 +317,8 @@ img{
 }
 
 .person-obj{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: grid;
+place-items: center;
 }
 
 .author{
@@ -536,7 +525,7 @@ span i{
 }
 
 @media screen and (max-width: 800px){
-  .container{
+    .container{
     padding: 2em 3em;
   }
   .question{
@@ -577,6 +566,7 @@ span i{
 .cover{
   width: 600px;
   padding: 0 1em;
+  height: auto;
 }
 
 #info{
@@ -595,9 +585,8 @@ span i{
 }
 
 .circle-1{
-  width: 60px;
-  margin-left: 1em;
-  
+  width: 80px;
+  margin-left: .3rem;
 }
 
 .banner p{
@@ -614,7 +603,8 @@ font-size: 1rem;
 }
 
 @media screen and (max-width:470px){
-  .question{
+  
+    .question{
     width: 280px;
   }
 
@@ -682,9 +672,8 @@ font-size: 1rem;
 }
 
 .circle-1{
-  width: 40px;
-  margin-left: 1.2em;
-  
+  width: 70px;
+  margin-left: .6em;
 }
 
 }

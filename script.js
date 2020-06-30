@@ -23,7 +23,7 @@ const reviews = [
         name: 'Jonanab web',
         job: "Designer",
         img: "/imgs/review-1.png",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit Ad, officiis  dicta molestias ducimus fugit earum sit adipisci distinction pariatur facere."
+        text: "Successful people don’t become that way overnight. What most people see at a glance—happiness, wealth, a great career, purpose—is the result of hard work and hustle over time."
     },
     {
         id: 2,
