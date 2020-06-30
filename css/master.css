@@ -30,6 +30,9 @@ body{
     font-size: 1.125em;
     line-height: 24px;
 }
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
 section:nth-of-type(even){
     background-color: #f1f5f6;
 }
