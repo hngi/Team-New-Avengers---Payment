@@ -296,10 +296,10 @@ ul.navbar-nav:first-of-type > li{
     .hero-text{
         width: 80%;
     }
-    section > h3{
+    section h3{
         font-size: 2em;
     }
-    section > p{
+    section p{
         font-size: 1.25em;
     }
     .offer-item h4{
