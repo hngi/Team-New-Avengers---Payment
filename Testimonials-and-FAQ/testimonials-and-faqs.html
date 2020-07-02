@@ -55,7 +55,7 @@
 						class="testimonials__card testimonials__card--first d-lg-flex flex-col"
 					>
 						<img
-							class="w-100 h-auto"
+							class="w-100"
 							src="../imgs/testimonial1.png"
 							alt="grace dean"
 						/>
@@ -109,7 +109,7 @@
 							/>
 						</div>
 						<img
-							class="w-100 h-auto order-1 order-lg-2"
+							class="w-100 order-1 order-lg-2"
 							src="../imgs/testimonial2.png"
 							alt="grace dean"
 						/>
@@ -117,7 +117,7 @@
 
 					<div class="testimonials__card d-lg-flex flex-col">
 						<img
-							class="w-100 h-auto"
+							class="w-100"
 							src="../imgs/testimonial3.png"
 							alt="grace dean"
 						/>
@@ -171,7 +171,7 @@
 							/>
 						</div>
 						<img
-							class="w-100 h-auto order-1 order-lg-2"
+							class="w-100 order-1 order-lg-2"
 							src="../imgs/testimonial4.png"
 							alt="grace dean"
 						/>
@@ -183,7 +183,7 @@
 					<header
 						class="faqs__header d-flex flex-column align-items-center justify-content-center"
 					>
-						<h1>
+						<h1 class="text-center">
 							Frequently Asked Questions
 						</h1>
 
@@ -197,7 +197,8 @@
 					<div class="faqs__content row mt-4">
 						<div class="col-12 col-lg-3 text-center text-lg-left">
 							<button
-								class="btn w-100 w-md-50 w-lg-auto mt-3 mt-lg-0"
+								data-tab="general-questions"
+								class="btn w-100 w-md-50 w-lg-auto mt-3 mt-lg-0 current"
 							>
 								General Questions
 							</button>
@@ -205,6 +206,7 @@
 
 						<div class="col-12 col-lg-3 text-center">
 							<button
+								data-tab="money-transfer"
 								class="btn w-100 w-md-50 w-lg-auto mt-3 mt-lg-0"
 							>
 								Money Transfer
@@ -213,6 +215,7 @@
 
 						<div class="col-12 col-lg-3 text-center">
 							<button
+								data-tab="mobile-banking"
 								class="btn w-100 w-md-50 w-lg-auto mt-3 mt-lg-0"
 							>
 								Mobile Banking
@@ -221,6 +224,7 @@
 
 						<div class="col-12 col-lg-3 text-center text-lg-right">
 							<button
+								data-tab="fees-and-banking"
 								class="btn w-100 w-md-50 w-lg-auto mt-3 mt-lg-0"
 							>
 								Fees and Charges
@@ -228,92 +232,389 @@
 						</div>
 					</div>
 
-					<div class="faqs__accordion">
-						<div class="w-100">
+					<div id="general-questions" class="tab-content">
+						<div class="faqs__accordion">
 							<button
 								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
 							>
-								<span>
-									Wallet Information
-								</span>
+								Wallet Information
 								<img
-									src="../imgs/icon-right.png"
-									height="20"
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
 									alt="right arrow"
 								/>
 							</button>
+							<p class="p-3">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
 						</div>
-						<p class="p-3">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua
-						</p>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet.
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum, consectetur sit amet
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
 					</div>
 
-					<div class="faqs__accordion mt-2">
-						<div class="w-100">
+					<div id="money-transfer" class="hidden tab-content">
+						<div class="faqs__accordion">
 							<button
 								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
 							>
-								<span class="mr-5 text-left">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit.
-								</span>
+								Money Information
 								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="right arrow"
+								/>
+							</button>
+							<p class="p-3">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet
+								<img
+									class="ml-5"
 									src="../imgs/icon-down.png"
 									width="20"
 									alt="down arrow"
 								/>
 							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet.
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum, consectetur sit amet
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
 						</div>
 					</div>
-					<div class="faqs__accordion mt-2">
-						<div class="w-100">
+					<div id="mobile-banking" class="hidden tab-content">
+						<div class="faqs__accordion">
 							<button
 								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
 							>
-								<span class="mr-5 text-left">
-									Lorem ipsum dolor sit amet.
-								</span>
+								Mobile banking Information
 								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="right arrow"
+								/>
+							</button>
+							<p class="p-3">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet
+								<img
+									class="ml-5"
 									src="../imgs/icon-down.png"
 									width="20"
 									alt="down arrow"
 								/>
 							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet.
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum, consectetur sit amet
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
 						</div>
 					</div>
-					<div class="faqs__accordion mt-2">
-						<div class="w-100">
+					<div id="fees-and-banking" class="hidden tab-content">
+						<div class="faqs__accordion">
 							<button
 								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
 							>
-								<span class="mr-5 text-left">
-									Lorem ipsum dolor sit amet, consectetur
-									elit.
-								</span>
+								Fees and banking Information
 								<img
+									class="ml-5"
 									src="../imgs/icon-down.png"
 									width="20"
-									alt="down arrow"
+									alt="right arrow"
 								/>
 							</button>
+							<p class="p-3">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
 						</div>
-					</div>
-					<div class="faqs__accordion mt-2">
-						<div class="w-100">
+
+						<div class="faqs__accordion mt-2">
 							<button
 								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
 							>
-								<span class="mr-5 text-left">
-									Lorem ipsum, consectetur adipiscing elit.
-								</span>
+								Lorem ipsum dolor sit amet
 								<img
+									class="ml-5"
 									src="../imgs/icon-down.png"
 									width="20"
 									alt="down arrow"
 								/>
 							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet.
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum dolor sit amet
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
+						</div>
+
+						<div class="faqs__accordion mt-2">
+							<button
+								class="btn w-100 px-3 d-flex align-items-center justify-content-between"
+							>
+								Lorem ipsum, consectetur sit amet
+								<img
+									class="ml-5"
+									src="../imgs/icon-down.png"
+									width="20"
+									alt="down arrow"
+								/>
+							</button>
+							<p class="p-3 hidden">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua
+							</p>
 						</div>
 					</div>
 				</div>
@@ -335,5 +636,6 @@
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 			crossorigin="anonymous"
 		></script>
+		<script src="../js/testimonials-and-faqs.js"></script>
 	</body>
 </html>
