@@ -1,125 +1,130 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="./imgs/Zuri.png" type="image/x-icon" />
+    <title>Zuri Payment</title>
+    <!-- Bootstrap -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <!-- swipper.css  -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <!-- fontawesome kit code  -->
+    <script
+      src="https://kit.fontawesome.com/727a6d1d11.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- animate.css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <!-- AOS.css  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="row">
-      <div class="col"></div>
-      <div class="col-10">
-        <nav
-          class="navbar navbar-expand-lg bg-white navbar-light py-sm-3 py-xl-4"
+    <header class="animate__animated animate__fadeIn">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light px-3 px-lg-5 py-2 py-lg-3"
+      >
+        <a class="navbar-brand txt-brand" href="index.html"
+          ><span class="txt-primary">Zu</span>ri</a
         >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul
+            class="navbar-nav txt-links w-100 d-flex flex-column flex-lg-row align-items-start justify-content-between align-items-lg-center w-100"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img src="imgs/Zu.svg" alt="" />
-            <img src="imgs/ri.svg" alt="" />
-          </a>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <li class="nav-item px-0 pr-xl-2">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item px-0 pr-xl-2">
+              <a class="nav-link" href="#operations">ABOUT US</a>
+            </li>
+            <li class="nav-item px-0 pr-xl-2">
+              <a class="nav-link" href="faq.html">TESTIMONIALS & FAQ</a>
+            </li>
+            <li class="nav-item px-0 pr-xl-2">
+              <a class="nav-link" href="contact.html">CONTACT & SUPPORT</a>
+            </li>
             <ul
-              class="navbar-nav ml-auto mt-2 mt-lg-0 list-unstyled font-weight-bold text-uppercase"
+              class="navbar-nav txt-links d-flex align-items-start align-items-lg-center"
             >
+              <li class="nav-item pr-2 pr-xl-5">
+                <a href="login.html" class="nav-link">LOGIN</a>
+              </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
+                <a
+                  href="register.html"
+                  target="_blank"
+                  class="txt-links btn btn-primary"
+                  >REGISTER</a
                 >
               </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Testimonials & Faq</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Contact & Support</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Login</a>
-              </li>
             </ul>
-            <button
-              class="btn btn-primary shadow navbtn px-4 ml-3 my-sm-0 text-uppercase font-weight-bold rounded-xl"
-              type="submit"
-            >
-              Register
-            </button>
-          </div>
-        </nav>
-      </div>
-      <div class="col"></div>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <div class="first-section">
-        <img
-          src="imgs/firstsection.jpg"
-          alt="carousel"
-          class="img-fluid"
-          width="100%"
-          height="auto"
-        />
-        <div class="carousel-caption">
-          <div class="row">
-            <div class="col"></div>
-            <p class="col-sm-12 h1 font-weight-bold">
-              Send & Recieve Money Anywhere
+      <section class="container-fluid mx-0 px-0" id="hero">
+        <div
+          class="hero-img d-flex flex-column justify-content-center align-items-left text-light"
+        >
+          <div
+            class="hero-text text-center text-lg-left pl-4 pl-lg-5 animate__animated animate__fadeInDown"
+          >
+            <h2 class="text-center">Send & Receive Money</h2>
+            <p class="text-center">
+              Quickly and easily send, recieve and request money online with
+              Zuri.
             </p>
-            <div class="col"></div>
-          </div>
-          <div class="row">
-            <div class="col"></div>
-            <p class="col-sm-10 h4">
-              From anywhere on the globe, you can send, recieve and request more
-              for less charge. With over 200 countries and 160 currencies
-              supported.
+            <p class="text-center">
+              Over 100 countries and 75 currencies supported.
             </p>
-            <div class="col"></div>
-          </div>
-          <div class="row open d-flex justify-content-between">
-            <div class="col"></div>
-            <div class="d-flex flex-column flex-md-row">
-              <button
-                class="btn btn-primary px-2 text-uppercase mr-md-4 mb-2 mb-md-0"
+            <div
+              class="hero-buttons d-flex flex-column flex-sm-row flex-wrap flex-sm-nowrap justify-content-sm-around py-2 py-lg-5"
+            >
+              <a
+                href="register.html"
+                target="_blank"
+                class="btn btn-primary mr-sm-3 mb-2 mb-sm-0"
+                >Open a Free Account</a
               >
-                Open a Free Account
-              </button>
-              <button
-                class="btn btn-outline-secondary px-2 text-uppercase d-flex mt-2 mt-md-0"
+              <a
+                target="_blank"
+                href="https://www.youtube.com/"
+                class="btn btn-clear ml-sm-3 mt-2 mt-sm-0 text-center"
               >
-                <img
-                  src="imgs/play.svg"
-                  alt="play"
-                  class="mr-2 align-items-center justify-content-center ml-md-4"
-                />See how it Works
-              </button>
+                <img src="./imgs/play.svg" class="pr-4" alt="" /> How it
+                Works</a
+              >
             </div>
-            <div class="col"></div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div class="second-section py-5">
         <div class="row pb-3 flex justify-content-center">
@@ -135,81 +140,285 @@
           </p>
         </div>
         <div class="row px-5 flex justify-content-center mb-0">
-          <div class="col"></div>
-          <img src="imgs/hehe.svg" alt="" class="mt-3 col-10 px-2" />
-          <div class="col"></div>
+          <img src="imgs/hehe.svg" alt="1234" class="mt-3 col-8 px-2 hehe" />
+          <img
+            src="imgs/oneAndTwo.svg"
+            alt="1234"
+            class="mt-3 col-10 px-2 heheM"
+          />
+          <p class="h6 col-5 mr-auto text-center text-mobile">
+            Select Country
+          </p>
+          <p class="col-5 ml-auto text-center text-mobile">Choose Service</p>
+
+          <img
+            src="imgs/threeAndFour.svg"
+            alt="1234"
+            class="mt-3 col-10 px-2 heheM"
+          />
+
+          <p class="h6 col-5 mr-auto text-center text-mobile">
+            Input Information
+          </p>
+          <p class="h6 col-5 ml-auto text-center text-mobile">Confirm & Send</p>
         </div>
         <div class="row px-5 pt-3 pb-5 flex justify-content-center mb-0">
           <!-- <div class="col"></div> -->
-          <div class="col-2 mr-auto ml-5 text-center">
+          <p class="col-2 mr-auto ml-5 text-center text-desktop">
             Select Country
-          </div>
-          <div class="col-2 mr-5 text-center">Choose Service</div>
-          <div class="col-2 ml-5 text-center">Input Information</div>
-          <div class="col-2 ml-auto mr-5 text-center">
+          </p>
+          <p class="col-2 mr-5 text-center text-desktop">Choose Service</p>
+          <p class="col-2 ml-5 text-center text-desktop">Input Information</p>
+          <p class="col-2 ml-auto mr-5 text-center text-desktop">
             Confirm & Send
-          </div>
+          </p>
           <!-- <div class="col"></div> -->
         </div>
       </div>
 
-      <div class="third-section bg-light py-5">
-        <div class="row pb-3 flex justify-content-center">
-          <p class="h2 font-weight-bold">Why ZuriPay?</p>
-          <p class="col-sm-12 h6 text-center">
-            Here is why you should use ZuriPay
-          </p>
+      <section class="container-fluid mx-0 px-3 py-3 py-md-5" id="offers">
+        <h3 class="text-center pb-2 pb-xl-3 pt-3 pt-xl-5">
+          Why ZuriPay ?
+        </h3>
+        <p class="text-center pb-3 pb-xl-5">
+          Here is why you should use ZuriPay.
+        </p>
+        <div class="features row text-center px-2 px-xl-5 py-2 py-xl-5">
+          <article
+            class="offer-item px-4 col-12 col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="800"
+          >
+            <img src="imgs/anywhereInTheWorld.svg" alt="svg" class="tiny-svg" />
+            <h4 class="py-3">Anywhere on the Glob</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+              neque nunc, donec urna tellus et molestie amet nullam. Est.
+            </p>
+          </article>
+          <article
+            class="offer-item px-4 col-12 col-lg-6 my-auto my-0"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <img src="imgs/faster.svg" alt="svg" class="tiny-svg" />
+            <h4 class="py-3">Faster Payments</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+              neque nunc, donec urna tellus et molestie amet nullam. Est.
+            </p>
+          </article>
+          <article
+            class="offer-item px-4 col-12 col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-duration="1600"
+          >
+            <img src="imgs/send.svg" alt="svg" class="tiny-svg" />
+            <h4 class="py-3">Send More for Less</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+              neque nunc, donec urna tellus et molestie amet nullam. Est.
+            </p>
+          </article>
+          <article
+            class="offer-item px-4 col-12 col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="2000"
+          >
+            <img src="imgs/welcome.svg" alt="svg" class="tiny-svg" />
+            <h4 class="py-3">World Class Security</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+              neque nunc, donec urna tellus et molestie amet nullam. Est.
+            </p>
+          </article>
         </div>
-        <div class="row">
-          <div class="col-sm-10">
-            <div class="d-flex">
-              <img src="imgs/anywhereInTheWorld.svg" alt="" class="col-2" />
-              <p class="h5 col-10">Anywhere on the Globe</p>
-            </div>
-            <p class="h6 col-10 ml-auto">
+      </section>
+      <section class="container-fluid mx-0 px-3 py-3 py-md-5" id="offers">
+        <h3 class="text-center pb-2 pb-xl-3 pt-3 pt-xl-5">
+          Secure Payment With Low Transfer Fees
+        </h3>
+        <p class="text-center pb-3 pb-xl-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis urna
+          nisi risus mauris, felis aliquet sed. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Quis urna.
+        </p>
+        <div class="features row text-center px-5 px-xl-5 py-2 py-xl-5">
+          <article
+            class="offer-item col-12 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="800"
+          >
+            <img src="imgs/check.svg" alt="check" class="tiny-svg" />
+            <h4 class="py-3">Secure Payment Service</h4>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
               neque nunc, donec urna tellus et molestie amet nullam. Est.
             </p>
-          </div>
-          <div class="col-sm-10">
-            <div class="d-flex">
-              <img src="imgs/faster.svg" alt="" class="col-2" />
-              <p class="h4 col-10">Faster Payments</p>
-            </div>
-            <p class="col-10 ml-auto">
+          </article>
+          <article
+            class="offer-item col-12 col-lg-4 my-auto my-0"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <img src="imgs/check.svg" alt="check" class="tiny-svg" />
+            <h4 class="py-3">Low Cost And Fast Transfer</h4>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
               neque nunc, donec urna tellus et molestie amet nullam. Est.
             </p>
-          </div>
-          <div class="col-sm-10">
-            <div class="d-flex">
-              <img src="imgs/send.svg" alt="" class="col-2" />
-              <p class="h5 col-10">Send More for Less</p>
-            </div>
-            <p class="col-10 ml-auto">
+          </article>
+          <article
+            class="offer-item col-12 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-duration="1600"
+          >
+            <img src="imgs/check.svg" alt="check" class="tiny-svg" />
+            <h4 class="py-3">Real Time Money Tracking</h4>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
               neque nunc, donec urna tellus et molestie amet nullam. Est.
             </p>
-          </div>
-          <div class="col-sm-10">
-            <div class="d-flex">
-              <img src="imgs/welcome.svg" alt="" class="col-2" />
-              <p class="h5 col-10">World Class Security</p>
-            </div>
-            <p class="col-10 ml-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
-              neque nunc, donec urna tellus et molestie amet nullam. Est.
+          </article>
+        </div>
+      </section>
+
+      <!-- payments section  -->
+      <div class="row py-3 py-md-5 px-3 mx-0" id="payments">
+        <div class="col-12 col-lg-5 my-auto pt-3 pt-md-0 px-xl-5">
+          <div class="text-area text-center text-sm-left">
+            <h4>How does our Payment System Work?</h4>
+            <p class="py-2 py-md-3 py-lg-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio enim
+              tristique quam ut lectus purus. Massa arcu quis aliquet convallis
+              sit donec sapien varius. Imperdiet malesuada tellus pharetra
+              iaculis. Massa adipiscing sit pulvinar purus aliquet. Viverra
+              netus at egestas quis vitae. pellentesque at aliquet purus eu.
             </p>
+            <button class="btn btn-primary rounded-xl text-uppercase mt-4">
+              Learn More
+            </button>
           </div>
+        </div>
+        <div
+          class="col-12 col-lg-7 pr-0"
+          data-aos="zoom-in"
+          data-aos-easing="ease-out-back"
+          data-aos-delay="50"
+          data-aos-duration="800"
+        >
+          <img src="imgs/Group 122.svg" alt="" style="width: 100%;" />
         </div>
       </div>
 
-      <div class="fourth-section"></div>
+      <div class="sixth-section">
+        <div class="row d-flex flex-column justify-content-center">
+          <p class="h2 text-center py-2 px-4">
+            What Our Users Say About Us
+          </p>
+
+          <p class="px-5 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis urna
+            nisi risus mauris, felis aliquet sed. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Quis urna.
+          </p>
+        </div>
+        <div class="row shadow-lg mx-5 p-4">
+          <img
+            src="imgs/apostropheTop.svg"
+            alt="apostrophe"
+            class="medium-svg mr-auto"
+          />
+          <p class="text-center p-5 p-xl-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et magna
+            nisl amet orci dis iaculis erat amet egestas. Suspendisse laoreet
+            consequat turpis in et habitant eget. Ut congue vel, massa pulvinar.
+            Vulputate tristique bibendum potenti enim sit phasellus.
+          </p>
+          <div class="d-flex justify-content-center w-100">
+            <img src="imgs/reviewImg.svg" alt="review" />
+            <img src="imgs/reviewImg2.svg" alt="review" />
+            <img src="imgs/reviewImg3.svg" alt="review" />
+          </div>
+          <img
+            src="imgs/apostropheBottom.svg"
+            alt="apostrophe"
+            class="medium-svg ml-auto"
+          />
+        </div>
+      </div>
     </main>
 
+    <!-- footer  -->
+    <footer class="px-3 px-md-5 py-3 py-md-5 d-flex flex-column" id="footer">
+      <div class="footer-desktop d-none d-md-block">
+        <div
+          class="top-footer d-flex justify-content-between align-items-center"
+        >
+          <h5 class="text-white">Zuri</h5>
+          <div class="footer-links white">
+            <a href="index.html#operations" class="px-2">About Us</a>
+            <a href="#contact-section" class="px-2">Support</a>
+            <a href="#" class="px-2">FAQ</a>
+          </div>
+        </div>
+        <hr />
+        <div
+          class="bottom-footer d-flex justify-content-between align-items-center"
+        >
+          <p class="my-0">
+            Copyright @ 2020 <span class="txt-primary">Zuri</span>.All Rights
+            Reserved
+          </p>
+          <div class="footer-links light">
+            <a href="#" class="px-2">Security</a>
+            <a href="#" class="px-2">T&C</a>
+            <a href="#" class="px-2">Privacy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-mobile d-flex flex-column d-md-none">
+        <div class="top-footer row">
+          <div class="col-2 d-flex align-items-center">
+            <h5 class="txt-brand text-white pr-3 p-sm-3" id="vline">
+              Zu<span class="txt-primary text-white">ri</span>
+            </h5>
+          </div>
+          <div
+            class="col-10 d-flex flex-column align-items-end justify-content-center"
+          >
+            <div class="footer-links light pb-2">
+              <a href="index.html#operations" class="px-2 text-white"
+                >About Us</a
+              >
+              <a href="#contact-section" class="px-2 text-white">Support</a>
+              <a href="#" class="px-2 text-white">FAQ</a>
+            </div>
+            <div class="footer-links light py-2">
+              <a href="#" class="px-2 text-white">Security</a>
+              <a href="#" class="px-2 text-white">T&C</a>
+              <a href="#" class="px-2 text-white">Privacy</a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer align-self-center pt-3">
+          <p class="my-0 py-2 text-white">
+            Copyright @ 2020 Zuri. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Boostrap scripts -->
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
@@ -218,9 +427,49 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <!-- swiper.js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
+      integrity="sha256-NiMdnMv0WBAps3M8mcB7WHzlanETt0rnwMCgg67DgCk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS.js  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // <!-- Initialize desktop Swiper -->
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 2,
+        spaceBetween: 60,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // autoplay: {
+        //     delay: 5000,
+        //     },
+      });
+
+      // <!-- Initialize mobile Swiper -->
+      var swiper = new Swiper(".mobile-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 60,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+        },
+      });
+
+      // <!-- initialize AOS -->
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>
