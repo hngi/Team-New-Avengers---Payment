@@ -15,6 +15,20 @@
 	object-fit: cover;
 }
 
+.hidden,
+[hidden] {
+	display: none !important;
+}
+
+.current {
+	background-color: var(--zuri-blue) !important;
+	color: #ffffff !important;
+}
+
+.rotate {
+	transform: rotate(-90deg);
+}
+
 .enterpreneur::before {
 	content: '';
 	top: 0;
@@ -138,8 +152,7 @@
 .faqs__content div:first-child button {
 	font-weight: 20px;
 	line-height: 30px;
-	color: #ffffff;
-	background-color: var(--zuri-blue);
+	/* color: #ffffff; */
 	padding-left: 3rem;
 	padding-right: 3rem;
 }
@@ -172,12 +185,30 @@
 	display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 	.enterpreneur__inner h1 {
-		line-height: 70px;
+		font-size: 30px;
 	}
 
 	.enterpreneur__inner p {
-		line-height: 40px;
+		font-size: 20px;
+	}
+	.testimonials__card > img {
+		height: auto;
+		width: 100%;
+	}
+
+	.testimonials__content img {
+		height: 20px;
+	}
+
+	.testimonials__content p {
+		padding: 0 20px;
+	}
+
+	.faqs__accordion button,
+	.faqs__accordion p {
+		font-size: 1rem;
+		line-height: 25px;
 	}
 }
