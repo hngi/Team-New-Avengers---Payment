@@ -9,12 +9,12 @@
     }
 }
 .login-jumbo {
-    background: url('/imgs/background/micah-williams-lmFJOx7hPc4-unsplash\ 1.png');
+    background: url('../imgs/background/micah-williams-lmFJOx7hPc4-unsplash\ 1.png');
     background-size: cover;
     padding: 5rem .5rem;
 }
 .register-jumbo {
-    background: url('/imgs/background/micah-williams-lmFJOx7hPc4-unsplash\ 2.png') ;
+    background: url('../imgs/background/micah-williams-lmFJOx7hPc4-unsplash\ 2.png') ;
     background-size: cover;
     background-position-x: 40%;
     padding: 5rem .5rem;
