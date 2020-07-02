@@ -9,7 +9,11 @@
     }
 }
 .login-jumbo {
+<<<<<<< HEAD
     background: url('../imgs/micah-williams-lmFJOx7hPc4-unsplash\ 1.png');
+=======
+    background: url('../imgs/background/micah-williams-lmFJOx7hPc4-unsplash\ 1.png');
+>>>>>>> cc7de41bf603f9a26822e81181b864bb0a53f0ab
     background-size: cover;
     padding: 5rem .5rem;
 }
