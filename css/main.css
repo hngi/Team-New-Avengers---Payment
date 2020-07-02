@@ -23,7 +23,7 @@ body {
   color: #f784ad !important;
   font-family: "Mali", sans-serif;
   font-weight: bold;
-  font-size: 3.125em;
+  font-size: 3.12em;
   line-height: 65px;
 }
 .txt-links {
@@ -110,6 +110,7 @@ ul.navbar-nav:first-of-type > li {
 .txt-links li a:after {
   top: 5px;
 }
+
 /* hero styles */
 #hero {
   height: 90vh;
